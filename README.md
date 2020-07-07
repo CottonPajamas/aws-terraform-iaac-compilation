@@ -4,4 +4,4 @@ Compilation of useful terraform infrastructure as a code configuration files for
 <br>
 
 ### Contents
-1. Setting up a Squid Forward Proxy server : [file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/squid_proxy_server.tf)
+1. Setting up a Squid Forward Proxy server : [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/squid_proxy_server.tf)
