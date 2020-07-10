@@ -43,7 +43,7 @@ resource "aws_security_group" "FP_SG" {
     cidr_blocks = ["<<specify whitelisted IPs>>"]
   }
 
-	# This allows all traffic going out
+	# This allows all outbound traffic
   egress {
     from_port   = 0
     to_port     = 0
@@ -75,7 +75,7 @@ resource "aws_instance" "testVM001" {
 	security_groups				 			= [aws_security_group.FP_SG.name]   # Note that name and not id is to be used.
 }
 
-# Generates out the output once you run "terraform apply".
+# Generates output
 output "lb_address" {
   value = aws_instance.testVM001.public_dns
 }
