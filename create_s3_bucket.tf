@@ -12,7 +12,7 @@ provider "aws" {
 
 # Creating S3 bucket
 resource "aws_s3_bucket" "custom_bucket" {
-	bucket = "my-custom-s3-terraform-bucket"
+	bucket 	= "my-custom-s3-terraform-bucket"
 	acl	= "private"
 
 	# Enables versioning
