@@ -9,8 +9,8 @@ provider "aws" {
 
 # An example of using variables in a terraform configuration file
 variable "custom_subnet" {
-  description = "Public subnet - custom VPC"
-  default = "<<specify Subnet ID>>"
+	description = "Public subnet - custom VPC"
+	default = "<<specify Subnet ID>>"
 }
 
 # This describes the AMI to use - here we only want to use the latest Amazon Linux AMI
@@ -33,27 +33,27 @@ data "aws_ami" "amazon-linux-2" {
 # Specifies the resource to provision and its associated configurations
 # <<-EOF  ....  EOF are Terraform’s heredoc syntax, which allows you to create multiline strings without having to use \n all over the place.
 resource "aws_instance" "testVM001" {
-	ami                         = data.aws_ami.amazon-linux-2.id
-	associate_public_ip_address = true
-	instance_type               = "t2.micro"
-	key_name                    = "<<specify key pair name>>"
-	user_data					= <<-EOF
-								#!/bin/bash
-								sudo su
-								echo "<<specify whitelisted IPs>>" > /home/ec2-user/whitelisted_ips.txt
-								curl https://cottonpajamas.github.io/aws-custom-startup-scripts-ec2/squid/start.sh --output /home/ec2-user/start.sh
-								chmod +x /home/ec2-user/start.sh
-								. /home/ec2-user/start.sh
-								EOF
-	subnet_id 					= var.custom_subnet
+	ami				= data.aws_ami.amazon-linux-2.id
+	associate_public_ip_address	= true
+	instance_type			= "t2.micro"
+	key_name			= "<<specify key pair name>>"
+	user_data			= <<-EOF
+						#!/bin/bash
+						sudo su
+						echo "<<specify whitelisted IPs>>" > /home/ec2-user/whitelisted_ips.txt
+						curl https://cottonpajamas.github.io/aws-custom-startup-scripts-ec2/squid/start.sh --output /home/ec2-user/start.sh
+						chmod +x /home/ec2-user/start.sh
+						. /home/ec2-user/start.sh
+					EOF
+	subnet_id			= var.custom_subnet
 	vpc_security_group_ids 		= ["<<specify security group ID>>"]
 }
 
 # Generates out the output once you run "terraform apply".
 output "lb_address" {
-  value = aws_instance.testVM001.public_dns
+	value = aws_instance.testVM001.public_dns
 }
 
 output "instance_ips" {
-  value = [aws_instance.testVM001.*.public_ip]
+	value = [aws_instance.testVM001.*.public_ip]
 }
