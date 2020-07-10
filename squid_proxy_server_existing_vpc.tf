@@ -1,4 +1,4 @@
-# Creates squid forward proxy server in an existing VPC
+# Creating a squid forward proxy server in an existing VPC
 # References:
 # 	- https://www.terraform.io/docs/providers/aws/r/instance.html
 
