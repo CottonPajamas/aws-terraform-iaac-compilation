@@ -1,3 +1,7 @@
+# Creates squid forward proxy server in an existing VPC
+# References:
+# 	- https://www.terraform.io/docs/providers/aws/r/instance.html
+
 # Describes the basic configs - which platform you are using and credentials to use if any
 # Best practice to include the version of the provider to use in order to ensure consistency in deployments
 provider "aws" {
