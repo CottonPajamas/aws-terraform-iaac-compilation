@@ -28,11 +28,11 @@ resource "aws_s3_bucket" "custom_bucket" {
 
 # Blocks all public access for our newly created bucket - this can be found under the bucket's 'Permssions' settings
 resource "aws_s3_bucket_public_access_block" "example" {
-	bucket = aws_s3_bucket.custom_bucket.id
-	block_public_acls				=	true
-	block_public_policy			=	true
-	ignore_public_acls			=	true
-	restrict_public_buckets	=	true
+	bucket					= aws_s3_bucket.custom_bucket.id
+	block_public_acls			= true
+	block_public_policy			= true
+	ignore_public_acls			= true
+	restrict_public_buckets			= true
 }
 
 # Generates output
