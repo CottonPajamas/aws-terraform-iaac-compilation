@@ -46,7 +46,7 @@ resource "aws_instance" "testVM001" {
 								. /home/ec2-user/start.sh
 								EOF
 	subnet_id 					= var.custom_subnet
-	vpc_security_group_ids 		= [ "<<specify security group ID>>" ]
+	vpc_security_group_ids 		= ["<<specify security group ID>>"]
 }
 
 # Generates out the output once you run "terraform apply".
