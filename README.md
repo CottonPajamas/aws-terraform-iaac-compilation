@@ -6,8 +6,8 @@ Compilation of useful terraform infrastructure as a code configuration files for
 ### Contents
 1. Basics
     - [ ] Creating S3 bucket : &nbsp;&nbsp;[create_s3_bucket.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/create_s3_bucket.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/create_s3_bucket.tf)
-    - [ ] Creating a security group : &nbsp;&nbsp;[create_security_group.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/create_security_group.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/create_security_group.tf)
-    - [ ] Creating a virtual private cloud (VPC) with a single public and private subnet : &nbsp;&nbsp;[create_simple_vpc.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/create_simple_vpc.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/create_simple_vpc.tf)
+    - [x] Creating a security group : &nbsp;&nbsp;[create_security_group.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/create_security_group.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/create_security_group.tf)
+    - [ ] Creating a VPC with a single public and private subnet : &nbsp;&nbsp;[create_simple_vpc.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/create_simple_vpc.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/create_simple_vpc.tf)
 
 <br>
 
