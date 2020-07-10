@@ -1,16 +1,16 @@
 # Describes the basic configs - which platform you are using and credentials to use if any
 # Best practice to include the version of the provider to use in order to ensure consistency in deployments
 provider "aws" {
-	access_key 	= <<specify access_key>>
-	secret_key 	= <<specify secret_key>>
-	region 		= <<specify region>>
+	access_key 	= "<<specify access_key>>"
+	secret_key 	= "<<specify secret_key>>"
+	region 		= "<<specify region>>"
 	version		= "2.7"
 }
 
 # An example of using variables in a terraform configuration file
 variable "custom_subnet" {
   description = "Public subnet - custom VPC"
-  default = <<specify Subnet ID>>
+  default = "<<specify Subnet ID>>"
 }
 
 # This describes the AMI to use - here we only want to use the latest Amazon Linux AMI
@@ -36,17 +36,17 @@ resource "aws_instance" "testVM001" {
 	ami                         = data.aws_ami.amazon-linux-2.id
 	associate_public_ip_address = true
 	instance_type               = "t2.micro"
-	key_name                    = <<specify key pair name>>
+	key_name                    = "<<specify key pair name>>"
 	user_data					= <<-EOF
 								#!/bin/bash
 								sudo su
-								echo <<specify whitelisted IPs>> > /home/ec2-user/whitelisted_ips.txt
+								echo "<<specify whitelisted IPs>>" > /home/ec2-user/whitelisted_ips.txt
 								curl https://cottonpajamas.github.io/aws-custom-startup-scripts-ec2/squid/start.sh --output /home/ec2-user/start.sh
 								chmod +x /home/ec2-user/start.sh
 								. /home/ec2-user/start.sh
 								EOF
 	subnet_id 					= var.custom_subnet
-	vpc_security_group_ids 		= [ <<specify security group ID>> ]
+	vpc_security_group_ids 		= [ "<<specify security group ID>>" ]
 }
 
 # Generates out the output once you run "terraform apply".
