@@ -5,6 +5,7 @@ Compilation of useful terraform infrastructure as a code configuration files for
 
 ### Contents
 1. Basics
+    - [x] Usefult tips : &nbsp;&nbsp;[useful-tips.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/useful-tips.tf) &nbsp;&nbsp;
     - [x] Creating S3 bucket : &nbsp;&nbsp;[create_s3_bucket.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/create_s3_bucket.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/create_s3_bucket.tf)
     - [x] Creating a security group : &nbsp;&nbsp;[create_security_group.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/create_security_group.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/create_security_group.tf)
     - [x] Creating a VPC with a single public and private subnet : &nbsp;&nbsp;[create_simple_vpc.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/create_simple_vpc.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/create_simple_vpc.tf)
