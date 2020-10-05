@@ -27,9 +27,8 @@ squid_proxy_server_existing_vpc.tf](https://github.com/CottonPajamas/aws-terrafo
 
 4. Setting up personal mockpass server
     - [x] Deploy with custom VPC : &nbsp;&nbsp;[mockpass_server.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/mockpass_server.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/mockpass_server.tf)
+    - *For more info, please refer to https://github.com/opengovsg/mockpass*
 
-    For more info, please refer to https://github.com/opengovsg/mockpass
-    
 <br>
 
 5. Creating a bastion host in a public subnet and a private server in a private subnet with custom VPC
