@@ -12,7 +12,7 @@ Compilation of useful terraform infrastructure as a code configuration files for
 
 <br>
 
-2. Setting up a Squid Forward Proxy server
+2. Deploy a Squid Forward Proxy server
     - [x] Deploy to default VPC : &nbsp;&nbsp;[squid_proxy_server_default_vpc.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/squid_proxy_server_default_vpc.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/squid_proxy_server_default_vpc.tf)
     - [x] Deploy to existing VPC : &nbsp;&nbsp;[
 squid_proxy_server_existing_vpc.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/squid_proxy_server_existing_vpc.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/squid_proxy_server_existing_vpc.tf)
@@ -20,18 +20,18 @@ squid_proxy_server_existing_vpc.tf](https://github.com/CottonPajamas/aws-terrafo
 
 <br>
 
-3. Setting up a private Wireguard VPN server
+3. Deploy a private Wireguard VPN server
     - [ ] Deploy with custom VPC : &nbsp;&nbsp;[squid_proxy_server_custom_vpc.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/squid_proxy_server_custom_vpc.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/squid_proxy_server_custom_vpc.tf)
 
 <br>
 
-4. Setting up personal mockpass server
+4. Deploy mockpass server
     - [x] Deploy with custom VPC : &nbsp;&nbsp;[mockpass_server.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/mockpass_server.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/mockpass_server.tf)
     - *For more info, please refer to https://github.com/opengovsg/mockpass*
 
 <br>
 
-5. Creating a bastion host in a public subnet and a private server in a private subnet with custom VPC
+5. Deploy bastion host in a public subnet and a private server in a private subnet with custom VPC
     - [ ] Deploy bastion host and a private server : &nbsp;&nbsp;[bastion_and_private_server.tf](https://github.com/CottonPajamas/aws-terraform-iaac-compilation/blob/master/bastion_and_private_server.tf) &nbsp;&nbsp;|&nbsp;&nbsp; [raw file](https://raw.githubusercontent.com/CottonPajamas/aws-terraform-iaac-compilation/master/bastion_and_private_server.tf)
     
 <br>
