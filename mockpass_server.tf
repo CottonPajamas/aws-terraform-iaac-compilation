@@ -40,7 +40,7 @@ resource "aws_internet_gateway" "custom_vpc_igw" {
   }
 }
 
-# Create custom Route Table (RT) for our public subnet - Our private subnet will use the default RT that AWS generates for us
+# Create custom Route Table (RT) for our public subnet - this will be different from the default RT that AWS auto-generates
 resource "aws_route_table" "custom_public_rt" {
   vpc_id = aws_vpc.custom_vpc.id
   tags = {
