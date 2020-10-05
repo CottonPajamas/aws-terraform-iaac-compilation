@@ -1,5 +1,5 @@
 ## AWS IAAC configuration files using Terraform
-Compilation of useful terraform infrastructure as a code configuration files for Amazon Web Services.
+Compilation of useful terraform infrastructure as a code deployment files for Amazon Web Services.
 
 <br>
 
